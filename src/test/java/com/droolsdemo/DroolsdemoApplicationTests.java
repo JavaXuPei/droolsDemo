@@ -17,6 +17,7 @@ class DroolsdemoApplicationTests {
     public void test(){
         KieServices kieServices = KieServices.Factory.get();
         container = kieServices.getKieClasspathContainer();
+        //<ksession name="myAgeSession"/>
         statefulKieSession = container.newKieSession("myAgeSession");
         User user = new User("duval yang",12);
         // 插入一个新的对象
